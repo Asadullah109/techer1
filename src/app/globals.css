@@ -2,26 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.navbar {
+  display: flex;
+  height: 64px; /* Add 'px' unit */
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.hero {
+  height: 100vh; /* 'lvh' changed to 'vh' for proper viewport height */
+  background-color: chartreuse;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.footer {
+  display: flex;
+  height: 64px; /* Add 'px' unit */
+  justify-content: center;
+  align-items: center;
+  background-color: brown;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Portfolio styles */
+.portfolio {
+  padding: 2rem; /* 32px padding */
+  background-color: #5410d4;
 }
+
+.portfolio h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+.portfolio-item {
+  background-color: rgb(37, 223, 20);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.portfolio-item p {
+  color: #ec0d0d;
+}
+
